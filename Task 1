@@ -1,0 +1,37 @@
+Write a blog on the Difference between HTTP1.1 vs HTTP2.
+HTTP 1.1
+A different connection to the server is necessary for every resource, including images, CSS files, and JavaScript files. Multiple resources must be fetched consecutively as a result, which may cause delayed page loads.
+One request can only be handled at a time on a single connection, thus if one request takes a long time to load (for instance, because of network congestion or another issue), it may prevent additional requests from loading and cause delays.
+Although servers may not always compress their responses before transmitting them to clients, they do support data compression (gzip).
+Without the client making a direct request, there is no native way for the server to start transferring resources to the client.
+
+HTTP 2
+Makes it possible to multiple requests and responses over a single connection. As a result, there will be less latency and faster page loads because numerous resources can be requested and supplied simultaneously.
+Employs a binary framing format as opposed to HTTP/1.1's plain text format. As a result, overhead is decreased and parsing is made more effective.
+uses header compression to shrink headers, which aids in bandwidth conservation and performance enhancement.
+Enables the server to transmit resources that it anticipates the client will require, based on the first request, to the client in advance. This is known as server push. Cutting down on round-trips, this can further speed up page loads.
+Prioritization of requests is possible with HTTP/2. By allowing the client to select resource priorities, HTTP/1.1's head-of-line blocking problem is lessened.
+TLS encryption is not unique to HTTP/2, however, it is frequently used in conjunction with HTTP/2 adoption. For security and privacy concerns, HTTP/2 encourages encrypted connections.
+
+
+
+
+Write a blog about objects and their internal representation in Javascript.
+A basic data type used to store collections of key-value pairs in JavaScript is called an object. Each value has a special key, often referred to as a property, that is specific to it. Creating an item is as follows:Principles of Objects
+You can use bracket notation or dot notation to access object properties.
+It is practical to declare objects and their properties all at once using object literals.
+Additionally, objects can contain methods, which are functions that are the object's properties.
+JavaScript objects are internally kept as collections of key-value pairs with the keys being strings (or Symbols) and the values being any type, including other objects. In memory, objects are formed, and each one has a distinct memory address.
+JavaScript's engine maintains memory and data structures in the background when properties are added to an object to keep track of those attributes and their values.
+In JavaScript, objects are frequently connected to a prototype object. With its common qualities and techniques, this prototype serves as a blueprint. JavaScript searches the prototype chain to identify properties or methods if they are not present on the object itself.
+Constructor functions allow you to create numerous objects with the same attributes and functionality at once.
+A class syntax was added to ES6 that improves the intuitiveness of working with objects and prototypes:
+
+
+
+
+
+
+
+
+
