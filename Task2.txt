@@ -1,0 +1,14 @@
+Document Object:
+Provides methods to access and modify HTML elements (e.g., changing text, styles, attributes).
+Allows adding or removing elements dynamically.
+Handles events (user interactions) such as clicks, inputs, and form submissions.
+Enables the retrieval of information from the webpage, like form values and element properties.
+The document focused on the content of the webpage itself, providing tools to manipulate and interact with HTML elements.
+
+Windows Object:
+Manages the browser's navigation history, enabling functions like going back and forward.
+Controls browser window properties, such as dimensions and position.
+Provides methods to open new browser windows or tabs.
+Interacts with the browser's location (URL), enabling URL manipulation and redirection.
+windows is a broader object that encompasses the entire browser environment, including the document, browser history, location, and other browser-related features.
+
